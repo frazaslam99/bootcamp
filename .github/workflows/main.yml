@@ -43,7 +43,7 @@ jobs:
         run: npm install -g surge
     
       - name: deploying on surge
-        run: surge ./build/http://bootcamp22222.surge.sh/ --token ${{secrets.SURGE_TOKEN}}    
+        run: surge ./build http://bootcamp22222.surge.sh/ --token ${{secrets.SURGE_TOKEN}}    
           
           
           #  # Set always-auth in npmrc
