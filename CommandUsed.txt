@@ -1,0 +1,3 @@
+npm install -g yarn
+yarn build  OR npm run build
+surge ./build
